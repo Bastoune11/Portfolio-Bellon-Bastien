@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">															<!-- Sert à faire appel au fichier CSS, contenant les modifications à apporter au fichier HTML. -->
+		<meta charset="utf-8" />
+		<link rel="icon" href="ico.png" type="image/png">													<!-- Sert à faire appel au fichier ico.png qui contient l'icone affiché sur l'onglet du navigateur.-->
+		<title> Accueil </title>
+	</head>
+	
+	<body>
+		<h1 class="textemulticolore"> Portfolio - BTS SIO (1ere Année) </h1>								<!-- Class fait appel à la ligne portant le même nom dans le fichier CSS , contenant les modifs de forme pour le titre de la page. -->
+		<ul class="menu">																					<!-- Même chose mais cette fois ci pour le menu. -->
+			<li> <a href="Index.html"> Accueil </a> </li>
+			<li> <a href="CV.html">CV </a> </li>
+			<li> <a href="Motivation.html">Lettre de motivation </a> </li>
+			<li> <a href="Veille.html"> Veille </a> </li> 
+			<li> <a href="Contact.html"> <strong> <u> Contact </u> </strong> </a> </li> 
+		</ul>
+		
+		
+		<form onsubmit="envoyerCommentaire(event)" id="commentaires">
+            <font size="+3"> <u> <b> <center> Donnez votre feedback ! </center> </b> </u> </font> 
+			<br>
+			<br>
+            <label for="nom"> Votre nom/prénom : </label>
+            <input type="text" name="nom" id="nom" onfocus="focusInput(this)" onblur="blurInput(this)">
+			<br>
+            <label for="dateNaissance"> Votre date de naissance : </label>
+            <input type="date" name="dateNaissance" id="dateNaissance" onfocus="focusInput(this)" onblur="blurInput(this)">
+			<br>
+            <label for="email"> Votre mail : </label>
+            <input type="email" name="email" id="email" onfocus="focusInput(this)" onblur="blurInput(this)">
+            <br>
+			<br>
+			<fieldset>
+                <legend> Votre genre : </legend>
+                <input type="radio" name="genre" value="male" id="male">
+                <label for="male"> Homme </label>
+                <input type="radio" name="genre" value="female" id="female">
+                <label for="female"> Femme </label>
+                <input type="radio" name="genre" value="NSPP" checked id="NSPP">
+                <label for="NSPP"> Ne se prononce pas </label>
+            </fieldset>
+			<br>
+			<br>
+            <label for="commentaire"> Votre commentaire : </label>
+			<br>
+			<br>
+            <textarea rows="3" cols="120" id="commentaire"> </textarea>
+			<br>
+            <br>
+			<br>
+			<br>
+			<input type="submit">
+        </form>
+		<script src = "script.js"> </script>
+		
+		
+		<footer class="pied2paj"> <a> Fait avec amour par Bastoune ❤️ </a> </footer>						<!-- Enfin, même chose pour cette fois ci, le pied de page qui est fixé à toutes les pages.-->
+	</body>
+</html>

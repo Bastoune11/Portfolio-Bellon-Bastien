@@ -1,0 +1,265 @@
+body {
+	background-color: #2F3136;
+	font-family:Arial;
+}
+
+* {
+	overflow-x: hidden;
+}
+
+
+
+/* Gestion du texte commun à toutes les pages */
+
+
+.textemulticolore {									/* Apporte des modifications au fichier HTML sur le titre de chaque page en multicolore. */
+	text-align:center;
+	background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+	);
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.menu,												/* Apporte des modifications au fichier HTML sur le menu de chaque page pour ajuster sa mise en forme. */
+.menu ul {
+	list-style-type: none;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+}
+.menu li {
+	display: inline-block;							/* Dispose de manière horizontale les élements du menu. */
+	position: relative;
+}
+.menu a {
+	display: block;									/* Transforme les liens en bloc pour pouvoir les redimensionner. */
+	text-align: center;
+	text-decoration:none;
+	padding:3px 15px;
+	line-height:30px;
+	height:30px;
+	width:175px;
+}
+.menu li {
+	background-color: #666; 						/* Couleur d'arriere-plan du menu */
+}
+.menu li a {
+	color: #fff; 									/* Couleur du texte du menu */
+}
+.menu li:hover {
+	background-color: #555; 						/* Couleur d'arriere-plan du menu au survol */
+}
+.menu li:hover a {
+	color: #fff; 									/* Couleur du texte du menu au survol */
+}
+
+.pied2paj {											/* Apporte des modifications au fichier HTML sur le pied de page de chaque page pour ajuster sa mise en forme. */
+	display:inline-block; 							/* Disposition horizontale des elements de menu */
+	position:fixed;									/* Pour définir la position du pied */
+	bottom:0px;										/* Pour que le pied soit positionné tout en bas */
+	left:0px;										/* Pour que le pied parte de tout à gauche */
+	width:100%;										/* Pour que le pied prenne la largeur de toute la page */
+	height:23px;									/* Pour que le pied obtienne une certaine longueur */
+	text-align:center;								/* Pour aligner le texte au centre */
+	background-color: #666;							/* Couleur d'arriere-plan du menu */
+}
+
+.pied2paj a {										/* Pour modifier QUE le texte */
+	text-decoration:none;							/* Pour enlever le soulignement */
+	color:#fff;										/* Mettre la couleur en blanc */
+	padding:3px 30px;								/* Espacer les deux textes */
+}
+
+
+
+/* Gestion du texte de chaque page */
+
+
+.txtacc1 {											/* Gestion du texte de l'accueil 1*/
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 50px;
+    margin-top:66px;
+    margin-left:450px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtacc2 {											/* Gestion du texte de l'accueil 2*/
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 50px;
+	padding-bottom: 50px;
+    margin-top:19%;
+    margin-left:450px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+
+
+.txtcv1 {											/* Gestion du texte du CV 1 */
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 50px;
+    margin-top:66px;
+    margin-left:450px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtcv2 {											/* Gestion du texte du CV 2 */
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 15px;
+    margin-top:325px;
+    margin-left:450px;
+	margin-right:900px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtcv3 {											/* Gestion du texte du CV 3 */
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 15px;
+    margin-top:325px;
+    margin-left:820px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtcv4 {											/* Gestion du texte du CV 4 */
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 15px;
+	padding-bottom: 37px;
+    margin-top:545px;
+    margin-left:450px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtcv5 {											/* Gestion du texte du CV 5 */
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 15px;
+	padding-bottom:18px;
+    margin-top:545px;
+    margin-left:1090px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+
+
+.txtmot {											/* Gestion du texte de la lettre de motivation */
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 50px;
+	padding-bottom: 58px;
+    margin-top:66px;
+    margin-left:450px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+
+
+.txtveille1 {										/* Gestion du texte de la veille 1*/
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 50px;
+    margin-top:66px;
+    margin-left:450px;
+	margin-right:500px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtveille2 {										/* Gestion du texte de la veille 2*/
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 15px;
+    margin-top:390px;
+    margin-left:450px;
+	margin-right:1125px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtveille3 {										/* Gestion du texte de la veille 3*/
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 15px;
+    margin-top:390px;
+    margin-left:800px;
+	margin-right:800px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+.txtveille4 {										/* Gestion du texte de la veille 4*/
+	color:#909090;
+    position: absolute;
+	text-justify: auto;
+    padding: 15px;
+    margin-top:390px;
+    margin-left:1125px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+
+
+form {												/* Gestion du Script de la page Contact */
+	color:#909090;
+	display: block;
+    position: absolute;
+	text-justify: auto;
+    padding: 50px;
+	padding-bottom: 59px;
+    margin-top:66px;
+    margin-left:450px;
+	margin-right:450px;
+    border-width: 5px;
+	border-style: solid;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+input[type="radio"] {
+    margin-bottom: 5px;
+}
